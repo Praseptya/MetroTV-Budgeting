@@ -1,6 +1,6 @@
 # 💼 MetroTV Budgeting System
 
-![Laravel](https://img.shields.io/badge/Laravel-10.x-red?logo=laravel)
+![Laravel](https://img.shields.io/badge/Laravel-11.x-red?logo=laravel)
 ![PHP](https://img.shields.io/badge/PHP-8.2-blue?logo=php)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-orange?logo=mysql)
 ![Chart.js](https://img.shields.io/badge/Chart.js-3.9.1-purple?logo=chartdotjs)
@@ -19,10 +19,10 @@
 - Tabel ringkasan status dan grafik menggunakan **Chart.js**
 
 ### 🔹 Master Data
-- **Master Program**: pengelolaan data program & PIC
 - **Master Item**: daftar item biaya lengkap dengan satuan & harga
+- **Master Program**: pengelolaan data program & PIC
 - **Master Template**: struktur template anggaran turunan dari program & item
-- Form *create/edit* dinamis dengan modal pencarian item
+
 
 ### 🔹 Pengajuan & Approval
 - Proses pengajuan anggaran dari template yang telah dibuat
@@ -40,7 +40,7 @@
 
 | Komponen | Teknologi |
 |-----------|------------|
-| Backend | Laravel 10.x |
+| Backend | Laravel 11.x |
 | Frontend | Blade Template + Bootstrap 5 |
 | Database | MySQL |
 | Chart Visualization | Chart.js 3.9.1 |
