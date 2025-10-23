@@ -1,0 +1,158 @@
+/* judul kartu */
+.card-title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* paragraf bantu */
+.help-text {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* catatan kecil */
+.help-note {
+    display: inline-block;
+    color: #64748b;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+/* list bernomor rapi */
+.help-steps {
+    margin: 8px 0 12px;
+    padding-left: 18px;
+}
+
+/* bullet default */
+.bullet {
+    margin: 4px 0 14px;
+    padding-left: 18px;
+}
+
+/* tautan cepat gaya chip */
+.hc-quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip-link {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    font-size: 13px;
+    color: #0f172a;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.chip-link:hover {
+    background-color: #f8fafc;
+}
+
+/* kontak */
+.contact-list {
+    list-style: none;
+    margin: 6px 0 10px;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    color: #0f172a;
+}
+
+/* faq */
+.faq {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.faq p {
+    margin-top: 8px;
+    color: #475569;
+    line-height: 1.6;
+}
+
+.hc-h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 8px 0 6px;
+}
+
+.kbd {
+    display: inline-block;
+    min-width: 18px;
+    padding: 0 6px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    background-color: #f8fafc;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 2px;
+}
+
+.hc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 8px;
+}
+
+.hc-table th,
+.hc-table td {
+    border-bottom: 1px solid #eef2f7;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status i {
+    font-size: 8px;
+}
+
+.status.pending {
+    color: #a16207;
+    background-color: #fef3c7;
+}
+
+.status.approved {
+    color: #047857;
+    background-color: #d1fae5;
+}
+
+.status.revision {
+    color: #1d4ed8;
+    background-color: #dbeafe;
+}
+
+.status.rejected {
+    color: #b91c1c;
+    background-color: #fee2e2;
+}

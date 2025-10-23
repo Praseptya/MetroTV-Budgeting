@@ -1,0 +1,63 @@
+/* tinggi area chart utama */
+.charts-section .main-chart .chart-content {
+  min-height: 340px;
+  position: relative;
+}
+
+.charts-section .main-chart #mainChart {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.stat-card .stat-chart {
+  height: 64px;
+  position: relative;
+}
+
+.stat-card .stat-chart canvas {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.status i { font-size: 6px; }
+
+.status.approved {
+  background: #d1fae5;
+  color: #065f46;
+  border-color: #a7f3d0;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fcd34d;
+}
+
+.status.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+  border-color: #fecaca;
+}
+
+.status.revision {
+  background: #eef2ff;
+  color: #3730a3;
+  border-color: #c7d2fe;
+}

@@ -1,0 +1,219 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ====== NAV GROUP (Master Data) ====== */
+.nav-group .nav-group-toggle{
+  width:100%;
+  background:transparent;
+  border:0;
+  text-align:left;
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 14px 20px; color:#6b7280; font-size:14px; font-weight:600; cursor:pointer;
+}
+.nav-group .nav-group-toggle .caret { margin-left:auto; transition: transform .2s ease; }
+.nav-group.open .nav-group-toggle .caret { transform: rotate(90deg); }
+
+.submenu{
+  padding: 6px 10px 10px 10px;
+}
+.submenu .sub-item{ margin:6px 6px; }
+.submenu .nav-link.sub{
+  padding: 10px 14px 10px 16px;
+  margin: 0 6px;
+  border: 1px solid #e6e9ef;
+  background:#fff;
+  border-radius: 12px;
+  font-weight:600;
+  color:#525a6b;
+}
+.submenu .sub-item.active .nav-link.sub{
+  background:#f2f7ff; border-color:#cfe0ff; color:#1e40af;
+}
+.submenu .nav-link.sub:hover{ background:#f8fafc; border-color:#d8dee8; color:#374151; }
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 24px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo .program-text {
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 700;
+    color: #6b7280;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.sidebar-nav {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.nav-item {
+    margin-bottom: 2px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    color: #6b7280;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: #f8fafc;
+    color: #374151;
+}
+
+.nav-item.active .nav-link {
+    background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+    color: #0284c7;
+    border-left: 4px solid #0284c7;
+    font-weight: 600;
+}
+
+.nav-link i {
+    width: 20px;
+    margin-right: 14px;
+    font-size: 16px;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid #e5e7eb;
+    margin-top: auto;
+}
+
+.help-center, .settings {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.help-center i, .settings i {
+    width: 20px;
+    margin-right: 14px;
+}
+
+.help-center:hover, .settings:hover {
+    color: #374151;
+}
+
+.logout .nav-link {
+    color: #ef4444 !important;
+    padding: 12px 0;
+}
+
+.logout .nav-link:hover {
+    background: #fef2f2 !important;
+}
+
+/* Main */
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #e5e7eb;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.user-email {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+@media (max-width: 1024px) {
+    .sidebar { width: 240px; }
+    .main-content { margin-left: 240px; }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: fixed;
+        transform: translateX(-100%);
+        z-index: 1000;
+        transition: transform 0.3s ease;
+    }
+    .sidebar.active { transform: translateX(0); }
+    .main-content { margin-left: 0; }
+    .header { padding: 16px 20px; }
+    .header h1 { font-size: 24px; }
+}

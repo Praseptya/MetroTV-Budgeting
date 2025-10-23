@@ -1,0 +1,69 @@
+/* Form utilities khusus halaman Users */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.lbl {
+    display: block;
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.inp {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #fff;
+    color: #111827;
+}
+
+.btn-primary {
+    background: #ffffff;
+    color: #2b4996;
+    border: 1px solid #2563eb;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    filter: brightness(.96);
+    background: #2952bb;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.btn-outline {
+    padding: 8px 14px;
+    border: 1px solid #111827;
+    background: #ffffff;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #111827;
+    cursor: pointer;
+}
+
+.row-gap {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.help {
+    color: #64748b;
+    display: block;
+    margin-top: 6px;
+}

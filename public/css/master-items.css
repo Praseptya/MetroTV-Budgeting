@@ -1,0 +1,23 @@
+.unit-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.unit-inline .inp {
+  flex: 1;
+  min-width: 0;
+}
+
+.unit-sep {
+  color: #9ca3af;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.help {
+  display: inline-block;
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 12px;
+}

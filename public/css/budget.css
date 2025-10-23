@@ -1,0 +1,185 @@
+/* === Ellipsis helper untuk isi cell tabel === */
+.cell-ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cell-w-budget {
+  max-width: 160px;
+}
+
+.cell-w-desc {
+  max-width: 160px;
+}
+
+@media (max-width: 1200px) {
+  .cell-w-budget {
+    max-width: 200px;
+  }
+  .cell-w-desc {
+    max-width: 260px;
+  }
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+.status-pill .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  display: inline-block;
+}
+.status-pill.approved {
+  background: #e8f8ef;
+  color: #166534;
+}
+.status-pill.approved .dot {
+  background: #16a34a;
+}
+.status-pill.pending {
+  background: #fff7ed;
+  color: #92400e;
+}
+.status-pill.pending .dot {
+  background: #f59e0b;
+}
+.status-pill.rejected {
+  background: #fef2f2;
+  color: #991b1b;
+}
+.status-pill.rejected .dot {
+  background: #ef4444;
+}
+
+
+.btn-action.btn-approve:hover {
+  background-color: #dcfce7;
+  color: #0fb74d;
+}
+
+.btn-action.btn-reject:hover {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.flash.error strong {
+  font-weight: 700;
+}
+
+.flash.error span {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+input[type="date"].date-picker {
+  cursor: pointer;
+}
+
+input[type="date"].date-picker::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* === Modal overlay (ikut gaya Master Template) === */
+.mt-modal {
+  position : fixed;
+  inset : 0;
+  display : none;
+  align-items : center;
+  justify-content : center;
+  background : rgba(15, 23, 42, 0.45);
+  z-index : 2000;
+}
+
+.mt-modal.open {
+  display : flex;
+}
+
+.mt-modal__panel {
+  width : 960px;
+  max-width : calc(100% - 48px);
+  max-height : calc(100vh - 96px);
+  background : #ffffff;
+  border-radius : 16px;
+  box-shadow : 0 10px 40px rgba(2, 6, 23, 0.20);
+  display : flex;
+  flex-direction : column;
+  overflow : hidden;
+}
+
+.mt-modal__head {
+  padding : 16px 20px;
+  border-bottom : 1px solid #e5e7eb;
+  display : flex;
+  align-items : center;
+  justify-content : space-between;
+}
+
+.mt-modal__body {
+  padding : 16px 20px;
+  overflow : auto;
+}
+
+.mt-modal__foot {
+  padding : 12px 20px;
+  border-top : 1px solid #e5e7eb;
+  display : flex;
+  justify-content : flex-end;
+  gap : 8px;
+}
+
+.mt-modal__close {
+  width : 32px;
+  height : 32px;
+  border : 0;
+  border-radius : 8px;
+  background : #f1f5f9;
+  color : #0f172a;
+  font-weight : 700;
+  cursor : pointer;
+}
+
+.modal-open {
+  overflow : hidden;
+}
+
+/* tombol qty yang sudah ada */
+.qty-ctrl {
+  display : inline-flex;
+  align-items : center;
+  gap : 6px;
+}
+
+.qty-btn {
+  width : 28px;
+  height : 28px;
+  border : 1px solid #e2e8f0;
+  border-radius : 6px;
+  background : #ffffff;
+  cursor : pointer;
+  font-weight : 700;
+  line-height : 1;
+}
+
+.qty-btn:hover {
+  background : #f8fafc;
+}
+
+.qty-input {
+  width : 56px;
+  text-align : center;
+  padding : 6px 8px;
+  border : 1px solid #e2e8f0;
+  border-radius : 6px;
+}
